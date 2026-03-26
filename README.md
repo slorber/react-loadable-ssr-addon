@@ -1,4 +1,16 @@
+
+# DOCUSAURUS FORK
+
+This is the modified code Docusaurus uses through the `react-loadable-ssr-addon-v5-slorber` dependency.
+
+TODO internalize this code in Docusaurus core.
+
+---
+
+
+
 # React Loadable SSR Add-on
+
 > Server Side Render add-on for React Loadable. Load splitted chunks was never that easy.
 
 [![NPM][npm-image]][npm-url]
