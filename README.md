@@ -1,3 +1,11 @@
+# Docusaurus Fork?
+
+The Docusaurus fork code is on `main`, not that historical `master` branch:
+
+https://github.com/slorber/react-loadable-ssr-addon/tree/main
+
+---
+
 # React Loadable SSR Add-on
 > Server Side Render add-on for React Loadable. Load splitted chunks was never that easy.
 
