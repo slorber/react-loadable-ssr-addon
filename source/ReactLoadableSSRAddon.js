@@ -1,7 +1,7 @@
 /**
  * react-loadable-ssr-addon
  * @author Marcos Gonçalves <contact@themgoncalves.com>
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 import fs from 'fs';
@@ -11,7 +11,14 @@ import { getFileExtension, computeIntegrity, hasEntry } from './utils';
 // Webpack plugin name
 const PLUGIN_NAME = 'ReactLoadableSSRAddon';
 
-const WEBPACK_VERSION = require('webpack/package.json').version;
+const WEBPACK_VERSION = (function GetVersion() {
+  try {
+    // eslint-disable-next-line global-require
+    return require('webpack/package.json').version;
+  } catch (err) {
+    return '';
+  }
+}());
 
 const WEBPACK_5 = WEBPACK_VERSION.startsWith('5.');
 
@@ -340,7 +347,7 @@ class ReactLoadableSSRAddon {
     const json = JSON.stringify(this.manifest, null, 2);
     try {
       if (!fs.existsSync(fileDir)) {
-        fs.mkdirSync(fileDir);
+        fs.mkdirSync(fileDir, { recursive: true });
       }
     } catch (err) {
       if (err.code !== 'EEXIST') {

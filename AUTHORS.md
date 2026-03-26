@@ -12,4 +12,6 @@ react-loadable-ssr-addon is authored by:
 * Reece Dunham <me@rdil.rocks>
 * sebastien <lorber.sebastien@gmail.com>
 * Sébastien Lorber <slorber@users.noreply.github.com>
-* slorber <lorber.sebastien@gmail.com>
+* Troy Rhinehart <81650390+trhinehart-godaddy@users.noreply.github.com>
+* dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+* endiliey <endiliey@gmail.com>
